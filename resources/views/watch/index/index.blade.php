@@ -3,7 +3,7 @@
 <aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url({{$publicUrl}}/images/bnr-1.jpg);">
+			   	<li style="background-image: url(/templates/watch/images/bnr-1.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -17,7 +17,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url({{$publicUrl}}/images/bnr-2.jpg);">
+			   	<li style="background-image: url(/templates/watch/images/bnr-2.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -31,7 +31,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url({{$publicUrl}}/images/bnr-3.jpg);">
+			   	<li style="background-image: url(/templates/watch/images/bnr-3.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
