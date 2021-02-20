@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Session;
-class Cart extends Model
+
+class cart
 {
     public function add($id_products, $itemProductCart,$quantity,$quantity_products)
     {

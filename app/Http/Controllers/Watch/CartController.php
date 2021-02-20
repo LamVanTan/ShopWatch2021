@@ -4,12 +4,12 @@ namespace App\Http\Controllers\Watch;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\cart;
+use App\Models\Cart;
 use App\Models\Products;
 use Session;
 class CartController extends Controller
 {
-    public function __construct(cart $cart,Products $product){
+    public function __construct(Cart $cart,Products $product){
 		$this->cart = $cart;
 		$this->product = $product;
 	}
