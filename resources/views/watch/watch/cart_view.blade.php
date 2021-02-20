@@ -69,7 +69,7 @@
                     @endphp
                     <div class="product-cart d-flex cart-list">
                         <div class="one-forth">
-                            <div class="product-img" style="background-image: url({{$urlPic}}">
+                            <div class="product-img" style="background-image: url({{$urlPic}})">
                             </div>
                             <div class="display-tc">
                                 <h3>{{$product['name']}}</h3>
