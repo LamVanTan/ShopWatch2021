@@ -12,7 +12,7 @@
 
 	<div class="row">
 				<div class="col-sm-10 offset-sm-1 text-center">
-					<span><img src="{{$publicUrl}}/images/purchase.gif" width="100px"></span>
+					<span><img src="/templates/watch/images/purchase.gif" width="100px"></span>
 					<h2 class="mb-4">Cảm ơn bạn đã mua hàng, đây là tất cả đơn hàng của bạn</h2>
 					<p>
 						<a href="{{route('watch.index.index')}}"class="btn btn-primary btn-outline-primary"><i class="icon-shopping-cart"></i> Tiếp tục mua sắm</a>
@@ -280,7 +280,7 @@
                               @if($items->products_id == $orderItem->products_id)
                                @php 
                                 $img = $items->images[0]->images_name;
-                                $urlPic = 'http://localhost/appwatch/storage/app/public/files/'.$img; 
+                                $urlPic = '/templates/watch/images/'.$img; 
                                 
                                 
                                 if($items->sale_id != null){

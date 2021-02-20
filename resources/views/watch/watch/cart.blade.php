@@ -14,7 +14,7 @@
             <div class="col-sm-10 offset-md-1">
                 <div class="process-wrap">
                     <div class="process text-center active">
-                        <p><span><img src="{{$publicUrl}}/images/tick.gif" width="80px"></span></p>
+                        <p><span><img src="/templates/watch/images//tick.gif" width="80px"></span></p>
                         <h3>Mua hàng</h3>
                     </div>
                     <div class="process text-center ">
@@ -51,7 +51,7 @@
                 @foreach($listCart as $product)
                 @php 
                     $filename = $product['images'];
-                    $urlPic = 'http://localhost/appwatch/storage/app/public/files/'.$filename;
+                    $urlPic = '/templates/watch/images/'.$filename;
                     if(isset($product['sale'])){
                     $products_price = $product['price'];
                     $classPrice = "sale";

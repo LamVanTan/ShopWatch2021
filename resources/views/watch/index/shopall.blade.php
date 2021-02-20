@@ -22,7 +22,7 @@
                         $class = '';
                         $classPrice = "item_price";
                     }
-                    $urlPic = 'http://localhost/appwatch/storage/app/public/files/'.$img; 
+                    $urlPic = '/templates/watch/images/'.$img; 
                     $slug = Str::slug($products_name);
                       $urlSingle = route('watch.watch.single',[ $slug, $products_id]);
                 @endphp

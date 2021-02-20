@@ -36,7 +36,7 @@
                         @foreach($itemProductSingle->images as $img)
                         @php
                         $filename = $img->images_name;
-                        $urlPic = 'http://localhost/ShopWatch2021/storage/app/public/files/'.$filename; 
+                        $urlPic = '/templates/watch/images/'.$filename; 
                         @endphp
                         <div class="item">
                             <div class="product-entry border" style="">
