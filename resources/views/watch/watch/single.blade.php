@@ -367,6 +367,9 @@
         	})
         	.then((willDelete) => {
         	  if (willDelete) {
+                swal("Sản phẩm được thêm vào giỏ", {
+                        icon: "success", 
+                });
         	    $.ajax({
                   url:'{{route("watch.watch.add-cart")}}', 
                   method:"POST",
@@ -378,9 +381,7 @@
                   success: function(data){
                      var status = '#cart';
                      $(status).html(data);
-                     swal("Sản phẩm được thêm vào giỏ", {
-                        icon: "success", 
-                    });
+                     
                 	}
                 });
         	
