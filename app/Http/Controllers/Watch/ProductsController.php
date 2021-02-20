@@ -108,7 +108,7 @@ class ProductsController extends Controller
                                 'order_discount'    =>  0
                             ];
                     $order_detail = $this->ordersdetail->addItemOrderDetail($data);  
-                    dd($order_detail);
+                    //dd($order_detail);
                 }
                 if($order_detail){
                         $sale_code = strtoupper(substr(md5(microtime()), rand(0, 26), 5));
