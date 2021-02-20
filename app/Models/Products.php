@@ -42,7 +42,7 @@ class Products extends Model
     }
 
     public function getIdProducts(){
-        return DB::table('products')->where('products_id','desc')->first(); 
+        return DB::table('products')->orderBy('products_id')->first();
     }
 
     public function getItemProduct($id){
