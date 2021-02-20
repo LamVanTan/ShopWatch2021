@@ -38,7 +38,11 @@ class Products extends Model
     
     
     public function addItemProducts($data){
-        return DB::table('products')->insertGetId($data); 
+        return DB::table('products')->insert($data); 
+    }
+
+    public function getIdProducts(){
+        return DB::table('products')->where('products_id','desc')->first(); 
     }
 
     public function getItemProduct($id){

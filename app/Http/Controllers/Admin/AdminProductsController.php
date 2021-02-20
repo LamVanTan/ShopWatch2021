@@ -90,6 +90,9 @@ class AdminProductsController extends Controller
 			if($exe_flg) {
                 // lưu product
 				$productItem = $this->product->addItemProducts($data);
+                if($productItem){
+                    $idProducts = $this->product->getIdProducts();
+                }
                // duyệt từng ảnh và thực hiện lưu
                $dem = 0;
 				foreach ($files as $photo) {
@@ -101,7 +104,7 @@ class AdminProductsController extends Controller
                     $data = [
                                 'images_name'=>$filename,
                                 'images_status'=>1,
-                                'products_id'=>$productItem
+                                'products_id'=>$idProducts->products_id
                             ];
 					$imagesProducts = $this->img->addImages($data);
 				}
