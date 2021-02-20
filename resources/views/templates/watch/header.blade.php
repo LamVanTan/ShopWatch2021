@@ -7,26 +7,26 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rokkitt:100,300,400,700" rel="stylesheet">
         <!-- Animate.css -->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/animate.css">
+        <link rel="stylesheet" href="/templates/watch/css/animate.css">
         <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/icomoon.css">
+        <link rel="stylesheet" href="/templates/watch/css/icomoon.css">
         <!-- Ion Icon Fonts-->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/ionicons.min.css">
+        <link rel="stylesheet" href="/templates/watch/css/ionicons.min.css">
         <!-- Bootstrap  -->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/templates/watch/css/bootstrap.min.css">
         <!-- Magnific Popup -->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/magnific-popup.css">
+        <link rel="stylesheet" href="/templates/watch/css/magnific-popup.css">
         <!-- Flexslider  -->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/flexslider.css">
+        <link rel="stylesheet" href="/templates/watch/css/flexslider.css">
         <!-- Owl Carousel -->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="{{$publicUrl}}/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/templates/watch/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/templates/watch/css/owl.theme.default.min.css">
         <!-- Date Picker -->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="/templates/watch/css/bootstrap-datepicker.css">
         <!-- Flaticons  -->
-        <link rel="stylesheet" href="{{$publicUrl}}/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="/templates/watch/fonts/flaticon/font/flaticon.css">
         <!-- Theme style  -->
-        <link rel="stylesheet" href="{{$publicUrl}}/css/style.css">
+        <link rel="stylesheet" href="/templates/watch/css/style.css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <style type="text/css" media="screen">
             .sale{

@@ -6,15 +6,15 @@
     
     <title>Admin Luxury Watch</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="{{$adminUrl}}/vendors/iconfonts/mdi/css/materialdesignicons.css">
+    <link rel="stylesheet" href="/templates/admin/vendors/iconfonts/mdi/css/materialdesignicons.css">
     <!-- endinject -->
     <!-- vendor css for this page -->
     <!-- End vendor css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="{{$adminUrl}}/css/shared/style.css">
+    <link rel="stylesheet" href="/templates/admin/css/shared/style.css">
     <!-- endinject -->
     <!-- Layout style -->
-    <link rel="stylesheet" href="{{$adminUrl}}/css/demo_1/style.css">
+    <link rel="stylesheet" href="/templates/admin/css/demo_1/style.css">
     <!-- Layout style -->
     <link rel="shortcut icon" href="../asssets/images/favicon.ico" />
        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -30,8 +30,8 @@
     <nav class="t-header">
       <div class="t-header-brand-wrapper">
         <a href="index.html">
-          <img class="logo" src="{{$adminUrl}}/images/logo.svg" alt="">
-          <img class="logo-mini" src="{{$adminUrl}}/images/logo_mini.svg" alt="">
+          <img class="logo" src="/templates/admin/images/logo.svg" alt="">
+          <img class="logo-mini" src="/templates/admin/images/logo_mini.svg" alt="">
         </a>
       </div>
       <div class="t-header-content-wrapper">
@@ -109,7 +109,7 @@
                 <div class="dropdown-body">
                   <div class="dropdown-list">
                     <div class="image-wrapper">
-                      <img class="profile-img" src="{{$adminUrl}}/images/profile/male/image_1.png" alt="profile image">
+                      <img class="profile-img" src="/templates/admin/images/profile/male/image_1.png" alt="profile image">
                       <div class="status-indicator rounded-indicator bg-success"></div>
                     </div>
                     <div class="content-wrapper">
@@ -119,7 +119,7 @@
                   </div>
                   <div class="dropdown-list">
                     <div class="image-wrapper">
-                      <img class="profile-img" src="{{$adminUrl}}/images/profile/female/image_2.png" alt="profile image">
+                      <img class="profile-img" src="/templates/admin/images/profile/female/image_2.png" alt="profile image">
                       <div class="status-indicator rounded-indicator bg-success"></div>
                     </div>
                     <div class="content-wrapper">
@@ -129,7 +129,7 @@
                   </div>
                   <div class="dropdown-list">
                     <div class="image-wrapper">
-                      <img class="profile-img" src="{{$adminUrl}}/images/profile/male/image_3.png" alt="profile image">
+                      <img class="profile-img" src="/templates/admin/images/profile/male/image_3.png" alt="profile image">
                       <div class="status-indicator rounded-indicator bg-warning"></div>
                     </div>
                     <div class="content-wrapper">

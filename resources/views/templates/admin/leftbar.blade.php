@@ -4,7 +4,7 @@
     <div class="sidebar">
       <div class="user-profile">
         <div class="display-avatar animated-avatar">
-          <img class="profile-img img-lg rounded-circle" src="{{$adminUrl}}/images/profile/male/image_1.png" alt="profile image">
+          <img class="profile-img img-lg rounded-circle" src="/templates/admin/images/profile/male/image_1.png" alt="profile image">
         </div>
         <div class="info-wrapper">
           <p class="user-name">

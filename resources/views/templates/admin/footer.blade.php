@@ -2,16 +2,16 @@
     <!-- SCRIPT LOADING START FORM HERE /////////////-->
     <!-- plugins:js -->
     
-    <script src="{{$adminUrl}}/vendors/js/core.js"></script>
+    <script src="/templates/admin/vendors/js/core.js"></script>
     <!-- endinject -->
     <!-- Vendor Js For This Page Ends-->
-    <script src="{{$adminUrl}}/vendors/apexcharts/apexcharts.min.js"></script>
-    <script src="{{$adminUrl}}/vendors/chartjs/Chart.min.js"></script>
-    <script src="{{$adminUrl}}/js/charts/chartjs.addon.js"></script>
+    <script src="/templates/admin/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="/templates/admin/vendors/chartjs/Chart.min.js"></script>
+    <script src="/templates/admin/js/charts/chartjs.addon.js"></script>
     <!-- Vendor Js For This Page Ends-->
     <!-- build:js -->
-    <script src="{{$adminUrl}}/js/template.js"></script>
-    <script src="{{$adminUrl}}/js/dashboard.js"></script>
+    <script src="/templates/admin/js/template.js"></script>
+    <script src="/templates/admin/js/dashboard.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.js"></script>
 
     <script>

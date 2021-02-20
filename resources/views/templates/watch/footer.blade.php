@@ -80,28 +80,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 
 <!-- jQuery -->
-<script src="{{$publicUrl}}/js/jquery.min.js"></script>
+<script src="/templates/watch/js/jquery.min.js"></script>
 <!-- popper -->
-<script src="{{$publicUrl}}/js/popper.min.js"></script>
+<script src="/templates/watch/js/popper.min.js"></script>
 <!-- bootstrap 4.1 -->
-<script src="{{$publicUrl}}/js/bootstrap.min.js"></script>
+<script src="/templates/watch/js/bootstrap.min.js"></script>
 <!-- jQuery easing -->
-<script src="{{$publicUrl}}/js/jquery.easing.1.3.js"></script>
+<script src="/templates/watch/js/jquery.easing.1.3.js"></script>
 <!-- Waypoints -->
-<script src="{{$publicUrl}}/js/jquery.waypoints.min.js"></script>
+<script src="/templates/watch/js/jquery.waypoints.min.js"></script>
 <!-- Flexslider -->
-<script src="{{$publicUrl}}/js/jquery.flexslider-min.js"></script>
+<script src="/templates/watch/js/jquery.flexslider-min.js"></script>
 <!-- Owl carousel -->
-<script src="{{$publicUrl}}/js/owl.carousel.min.js"></script>
+<script src="/templates/watch/js/owl.carousel.min.js"></script>
 <!-- Magnific Popup -->
-<script src="{{$publicUrl}}/js/jquery.magnific-popup.min.js"></script>
-<script src="{{$publicUrl}}/js/magnific-popup-options.js"></script>
+<script src="/templates/watch/js/jquery.magnific-popup.min.js"></script>
+<script src="/templates/watch/js/magnific-popup-options.js"></script>
 <!-- Date Picker -->
-<script src="{{$publicUrl}}/js/bootstrap-datepicker.js"></script>
+<script src="/templates/watch/js/bootstrap-datepicker.js"></script>
 <!-- Stellar Parallax -->
-<script src="{{$publicUrl}}/js/jquery.stellar.min.js"></script>
+<script src="/templates/watch/js/jquery.stellar.min.js"></script>
 <!-- Main -->
-<script src="{{$publicUrl}}/js/main.js"></script>
+<script src="/templates/watch/js/main.js"></script>
 @if(Session::has('login'))
  @php 
      $message = Session::get('login');
