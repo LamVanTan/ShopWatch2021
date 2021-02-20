@@ -107,11 +107,10 @@ class ProductsController extends Controller
                                 'order_detail_quantity' =>  $order_quantity,
                                 'order_discount'    =>  0
                             ];
-                    $order_detail = $this->ordersdetail->addItemOrderDetail($data);
-                    
+                    $order_detail = $this->ordersdetail->addItemOrderDetail($data);  
+                    dd($order_detail);
                 }
                 if($order_detail){
-                    
                         $sale_code = strtoupper(substr(md5(microtime()), rand(0, 26), 5));
                         $data = [
                                     'sale_name' =>  'Mã Giảm Giá Cho Khách Hàng',
