@@ -96,7 +96,7 @@ class ProductsController extends Controller
             $order_id = $this->orders->addItemOrder($dataOrder);
             //dd($order_id);
             if($order_id){
-                $getIdOrder = $this->order->getIdOrder();
+                $getIdOrder = $this->orders->getIdOrder();
                 foreach ($listCart as $product){
                     $products_id = $product['id_products'];
                     $order_quantity = $product['quantity'];
