@@ -20,7 +20,11 @@ class Orders extends Model
 
 
     public function addItemOrder($data){
-        return DB::table('orders')->insertGetId($data);
+        return DB::table('orders')->insert($data);
+    }
+
+    public function getIdOrder(){
+        return DB::table('orders')->orderBy('order_id','desc')->first();
     }
 
     public function getListOrder(){

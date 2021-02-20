@@ -21,6 +21,9 @@ class OrdersDetail extends Model
 
     
     public function addItemOrderDetail($data){
-        return DB::table('orders_detail')->insertGetId($data);
+        return DB::table('orders_detail')->insert($data);
     }
+    // public function getIdOrderDetail(){
+    //     return DB::table('orders_detail')->orderBy('order_detail_id','desc')->first();
+    // }
 }
