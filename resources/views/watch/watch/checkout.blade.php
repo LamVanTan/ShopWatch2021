@@ -18,11 +18,11 @@
             <div class="col-sm-10 offset-md-1">
                 <div class="process-wrap">
                     <div class="process text-center active">
-                        <p><span><img src="/templates/watch/images//tick.gif" width="80px"></span></p>
+                        <p><span><img src="/templates/watch/images/tick.gif" width="80px"></span></p>
                         <h3>Mua hàng</h3>
                     </div>
                     <div class="process text-center active">
-                        <p><span><img src="/templates/watch/images//tick.gif" width="80px"></span></p>
+                        <p><span><img src="/templates/watch/images/tick.gif" width="80px"></span></p>
                         <h3>Đặt Hàng</h3>
                     </div>
                     <div class="process text-center">
@@ -224,7 +224,7 @@
                         <div class="col-md-12">
                             <div class="cart-detail">
                                 <h2>Phương thức thanh toán</h2>
-                                <div class="form-group"
+                                <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="radio ">
                                             <label><input value="shipper" type="radio" name="payment" checked="">Trả khi nhận hàng</label>

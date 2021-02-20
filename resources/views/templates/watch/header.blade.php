@@ -67,7 +67,7 @@
     </head>
     <body>
         <div class="load" hidden>
-            <img src="{{$publicUrl}}/images/load.gif">Vui lòng chờ trong giây lát....
+            <img src="/templates/watch/images/load.gif">Vui lòng chờ trong giây lát....
         </div>
         <div class="colorlib-loader"></div>
         <div id="page">

@@ -120,19 +120,19 @@ class ProductsController extends Controller
                                 ];
                         
                         $add_code_sale = $this->sale->addIteSaleCode($data);
-                        if($add_code_sale){
-                            $data =[
-                                        'header' => 'Đơn hàng thành công',
-                                        'slot' => 'Chúc mừng bạn đặt hàng thành công, Đơn hàng của bạn sẽ về trong 3-5 ngày tới.',
-                                        'subcopy' => 'Đây là mã giảm giá cho lần mua sắp tới mong bạn áp dụng để nhận nhiều ưu đãi của của hàng chúng tôi:  '.$sale_code,
-                                        'footer'=>'!'
-                                    ];  
-                            //dd($data);  
-                            // Mail::send('mail', $data, function($message) use($mail_to,$fullname){
-                            //     $message->to($mail_to, $fullname)->subject('Đặt hàng thành công');
-                            //     $message->from('shopwatch2021@gmail.com',"Watch");
-                            // });
-                        }
+                        // if($add_code_sale){
+                        //     $data =[
+                        //                 'header' => 'Đơn hàng thành công',
+                        //                 'slot' => 'Chúc mừng bạn đặt hàng thành công, Đơn hàng của bạn sẽ về trong 3-5 ngày tới.',
+                        //                 'subcopy' => 'Đây là mã giảm giá cho lần mua sắp tới mong bạn áp dụng để nhận nhiều ưu đãi của của hàng chúng tôi:  '.$sale_code,
+                        //                 'footer'=>'!'
+                        //             ];  
+                        //     //dd($data);  
+                        //     // Mail::send('mail', $data, function($message) use($mail_to,$fullname){
+                        //     //     $message->to($mail_to, $fullname)->subject('Đặt hàng thành công');
+                        //     //     $message->from('shopwatch2021@gmail.com',"Watch");
+                        //     // });
+                        // }
                 }
             }
         session()->forget(['cart','sale']);
