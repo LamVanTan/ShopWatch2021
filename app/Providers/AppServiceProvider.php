@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
+use URL;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -25,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        URL::forceScheme('https');
         View::share('publicUrl',getenv('PUBLIC_URL'));
         View::share('adminUrl',getenv('ADMIN_URL'));
         $category = Category::where('cat_parent_id',0)->get();
