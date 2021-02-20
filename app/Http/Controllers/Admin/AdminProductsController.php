@@ -100,7 +100,7 @@ class AdminProductsController extends Controller
                     $explodeFile = explode('.',$nameFile);//tach chuoi anh
                     $ext = end($explodeFile);//lay duoc duoi .jpg
                     $filename = 'watch-'.time().$dem++.'.'.$ext;
-                    $photo->move(base_path('storage/app/public/files/'),$filename);
+                    $photo->move(base_path('/templates/watch/images/'),$filename);
                     $data = [
                                 'images_name'=>$filename,
                                 'images_status'=>1,
@@ -208,7 +208,7 @@ class AdminProductsController extends Controller
                         $explodeFile = explode('.',$nameFile);//tach chuoi anh
                         $ext = end($explodeFile);//lay duoc duoi .jpg
                         $filename = 'watch-'.time().$dem++.'.'.$ext;
-                        $photo->move(base_path('storage/app/public/files/'),$filename);
+                        $photo->move(base_path('/templates/watch/images/'),$filename);
                         $data = [
                                     'images_name'=>$filename,
                                     'images_status'=>1,
