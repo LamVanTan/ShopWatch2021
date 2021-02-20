@@ -84,7 +84,7 @@
                                   @foreach($itemProduct->images as $img)
                                     @php
                                       $filename = $img->images_name;
-                                      $urlPic = 'http://localhost/ShopWatch2021/storage/app/public/files/'.$filename; 
+                                      $urlPic = '/templates/watch/images/'.$filename; 
                                     @endphp
                                   <div id="slide-{{$products_id}}-{{$i}}">
                                     <img src="{{$urlPic}}" alt="" style="width: 120px; height:120px;">

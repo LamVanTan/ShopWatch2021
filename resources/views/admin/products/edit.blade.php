@@ -92,7 +92,7 @@
                                                   @foreach($itemProducts->images as $img)
                                                     @php
                                                       $filename = $img->images_name;
-                                                      $urlPic = '/storage/app/public/files/'.$filename; 
+                                                      $urlPic = '/templates/watch/images/'.$filename; 
                                                     @endphp
                                                     
                                                   <div id="slide-{{$itemProducts->products_id}}-{{$i}}"> 
@@ -292,7 +292,7 @@
 @foreach($itemProducts->images as $img) 
   @php 
      $filename = $img->images_name;
-     $urlPic = '/storage/app/public/files/'.$filename; 
+     $urlPic = '/templates/watch/images/'.$filename; 
   @endphp
 <div class="modal" id="login-{{$i}}">
     <div class="modal-dialog modal-dialog-centered ">

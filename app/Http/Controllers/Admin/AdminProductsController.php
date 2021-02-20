@@ -253,7 +253,7 @@ class AdminProductsController extends Controller
                         $explodeFile = explode('.',$nameFile);//tach chuoi anh
                         $ext = end($explodeFile);//lay duoc duoi .jpg
                         $filename = 'watch-img'.time().'.'.$ext;
-                        $files->move(base_path('storage/app/public/files/'),$filename);
+                        $files->move(base_path('/templates/watch/images/'),$filename);
                         $data = [
                                     'images_name'=>$filename,
                                 ];
