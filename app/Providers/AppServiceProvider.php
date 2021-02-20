@@ -27,9 +27,9 @@ class AppServiceProvider extends ServiceProvider
     {
         View::share('publicUrl',getenv('PUBLIC_URL'));
         View::share('adminUrl',getenv('ADMIN_URL'));
-        $category = Category::where('cat_parent_id',0)->get();
-        $category_parent = Category::all();
+        // $category = Category::where('cat_parent_id',0)->get();
+        // $category_parent = Category::all();
         //dd($menu_category);
-        view::share(compact('category_parent','category'));
+        //view::share(compact('category_parent','category'));
     }
 }
