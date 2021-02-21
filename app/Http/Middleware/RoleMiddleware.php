@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-
+use Auth;
 class RoleMiddleware
 {
     /**
@@ -15,6 +15,16 @@ class RoleMiddleware
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if(!Auth::check()){
+            
+            return redirect()->route('auth.auth.login');
+         
+      }else{
+          $permission = Auth::user()->permission;
+          if($permission == 0){
+              return redirect()->route('auth.auth.login');
+          }
+      }    
+      return $next($request);
     }
 }
