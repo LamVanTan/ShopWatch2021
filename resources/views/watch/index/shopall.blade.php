@@ -31,7 +31,7 @@
                     <div class="product-entry border hover-products">
                         <span class="float-left sale-products">{{$Giam}}{{$sale_percent}}{{$phanTram}}</span>
                         <a href="{{$urlSingle}}" class="prod-img">
-                            <img src="{{$urlPic}}" class="img-fluid zoom" alt="Free html5 bootstrap 4 template" style="height: 200px;">
+                            <img src="{{$urlPic}}" class="img-fluid zoom" alt="img watch" style="height: 200px;">
                         </a>
                         <div class="desc">
                             <h2><a href="{{$urlSingle}}">{{$products_name}}</a></h2>
