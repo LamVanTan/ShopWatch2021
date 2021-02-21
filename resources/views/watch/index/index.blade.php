@@ -50,11 +50,7 @@
 		</aside>
 <div class="colorlib-product">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
-						<h2>BÁN CHẠY NHẤT</h2>
-					</div>
-				</div>
+				
 				<div class="row row-pb-md" id="shop">
 				@foreach($listItemProductSale as $itemProductsSale)
 					@php
