@@ -57,11 +57,18 @@
                         </div>
                      </div>
                      <div class="w-100"></div>
+                     <div class="col-sm-12">
+                        <div class="form-group">
+                           <input type="checkbox" value="1" class="btn btn-primary">
+                        </div>
+                     </div>
+                     <div class="w-100"></div>
                      <div class="col-sm-6">
                         <div class="form-group">
                            <input type="submit" value="Đăng Nhập" class="btn btn-primary">
                         </div>
                      </div>
+                     
                      <div class="col-sm-6">
                        <a href="#" onclick="resetPassword();">Quên mật khẩu!</a>   
                      </div>

@@ -167,40 +167,40 @@
                                 $listCart = session()->get('cart');
                                 @endphp
                                 @if($listCart)
-                                @php 
-                                    $totalPrice = 0;
-                                @endphp
-                                <ul>
-                                    <li>
-                                        <ul>
-                                            @foreach($listCart as $product)
-                                            @php 
-                                            $totalPrice = $totalPrice + $product['totalPirce'];
+                                    @php 
+                                        $totalPrice = 0;
+                                    @endphp
+                                    <ul>
+                                        <li>
+                                            <ul>
+                                                @foreach($listCart as $product)
+                                                @php 
+                                                $totalPrice = $totalPrice + $product['totalPirce'];
+                                                @endphp
+                                                <li style="">
+                                                    <span> {{$product['name']}} </span>
+                                                    <span >{{number_format($product['pricediscount'],0,',','.')}}VND x {{$product['quantity']}}  {{number_format($product['totalPirce'],0,',','.')}}VND</span>
+                                                </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                        <li><span>Giảm giá</span> 
+                                            <span>
+                                            @if(session()->get('sale'))	
+                                            {{session()->get('sale')}} %	
+                                            @endif</span>
+                                        </li>
+                                        <li><span style="width: 80px !important;">Tổng Tiền</span> 
+                                            <span  style="width: 240px !important; padding-left: 120px ">@php 
+                                            if($sale = session()->get('sale')) {
+                                            $totalPriceSale = ($totalPrice) - (($totalPrice*$sale) /100); 
+                                            }else{
+                                            $totalPriceSale  = $totalPrice;
+                                            } 
                                             @endphp
-                                            <li style="">
-                                                <span> {{$product['name']}} </span>
-                                                <span >{{number_format($product['pricediscount'],0,',','.')}}VND x {{$product['quantity']}}  {{number_format($product['totalPirce'],0,',','.')}}VND</span>
-                                            </li>
-                                            @endforeach
-                                        </ul>
-                                    </li>
-                                    <li><span>Giảm giá</span> 
-                                        <span>
-                                        @if(session()->get('sale'))	
-                                        {{session()->get('sale')}} %	
-                                        @endif</span>
-                                    </li>
-                                    <li><span style="width: 80px !important;">Tổng Tiền</span> 
-                                        <span  style="width: 240px !important; padding-left: 120px ">@php 
-                                        if($sale = session()->get('sale')) {
-                                        $totalPriceSale = ($totalPrice) - (($totalPrice*$sale) /100); 
-                                        }else{
-                                        $totalPriceSale  = $totalPrice;
-                                        } 
-                                        @endphp
-                                        {{number_format($totalPriceSale,0,',','.')}} VND</span>
-                                    </li>
-                                </ul>
+                                            {{number_format($totalPriceSale,0,',','.')}} VND</span>
+                                        </li>
+                                    </ul>
                                 @else
                                 <ul>
                                     <li>
@@ -276,8 +276,6 @@
 </div>
 
 </div>
- 
-
 <script
     src="https://www.paypal.com/sdk/js?client-id=AbEO67zfcwSprGjNUPms3P_xFokLKGStSyJmV7tVYReM3pUlRMwPcaq-D926UAL5UFZjs5gmge22QA98"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
 </script>
